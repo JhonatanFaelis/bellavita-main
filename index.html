@@ -5,8 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
 </head>
-<body>
-    <h1>teste</h1>
+
+<header>
+    <nav class="nav-bar">
+        <div class="logo">
+           <img src="./img/logo_sem_fundo.png" alt="" width="100px">
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#sobremim" class="nav-link">Sobre Nós</a></li>
+                <li class="nav-item"><a href="#qualificacao"  class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#tecnologias"  class="nav-link">Diferenciais</a></li>
+                <li class="nav-item"><a href="#projetos"  class="nav-link">Depoimentos</a></li>
+            </ul>
+
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+                <img class="icon" src="./img/menu_white_36dp.svg" alt="">
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="" class="nav-link">Boas vindas</a></li>
+            <li class="nav-item"><a href="#sobremim" class="nav-link">Sobre mim</a></li>
+            <li class="nav-item"><a href="#vantagens"  class="nav-link">Vantagens</a></li>
+            <li class="nav-item"><a href="#projetos"  class="nav-link">Projetos</a></li>
+        </ul>
+
+    </div>
+
+</header>
+
+<main>
+    <section class="sessao1">
+
+        <div>
+            <img src="./img/coracao.png" alt="">
+            <h1>
+                Compromisso com você
+            </h1>
+
+            <p>
+                Agência especializada em cuidados domiciliares com idosos, serviços adaptáveis e planos personalizados com confiança e qualidade.
+            </p>
+
+            <a href="#">Saiba mais</a>
+        </div>
+        
+    </section>
+
+    <section class="sessao2">
+        
+        <div class="sessao2-texto">
+            <h2>NOSSOS SERVIÇOS</h2>
+            <h4>Para você que procura um profissional da saúde para cuidar de quem você quer bem. </h4>
+        </div>
+
+        <div class="sessao2-container">
+            <div class="sessao2-servicos">
+                <h4>Cuidadores</h4>
+                <p>Temos uma equipe de cuidadores e profissionais de enfermagem experientes, treinados para auxiliar na rotina do idoso.</p>
+            </div>
+
+            <div class="sessao2-servicos">
+                <h4>Cuidadores</h4>
+                <p>Temos uma equipe de cuidadores e profissionais de enfermagem experientes, treinados para auxiliar na rotina do idoso.</p>
+            </div>
+
+            <div class="sessao2-servicos">
+                <h4>Cuidadores</h4>
+                <p>Temos uma equipe de cuidadores e profissionais de enfermagem experientes, treinados para auxiliar na rotina do idoso.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
 </body>
 </html>

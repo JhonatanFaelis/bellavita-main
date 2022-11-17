@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #51B6B6;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list a{
+    font-size: 20px;
+}
+
+.nav-item{
+    margin: 0 15px;
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/*FIM DO MENU*/
+
+/*INICIO SESSAO 1 - O INSTITUTO*/
+    .sessao1{
+        background-image: url('./img/idoso.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .sessao1 h1{
+        margin-top: 40px;
+        color: white;
+    }
+
+    .sessao1 p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .sessao1 a{
+        display: flex;
+        justify-content: center;
+        border: 1px solid #51B6B6;
+        width: 50%;
+        margin: auto;
+        background-color: #51B6B6;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    .sessao2{
+        display: flex;
+        background-image: url('./img/bg2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-wrap: wrap;
+    }
+
+    .sessao2-texto{
+        width: 100%;
+    }
+
+    .sessao2-container{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+
+    .sessao2-texto{
+        color: white;
+    }
+
+    .sessao2-texto h2{
+        margin: 50px 20px;
+        font-size: 25px;
+    }
+
+    .sessao2-texto h4{
+        margin: 12px 20px;
+        font-size: 20px;
+    }
+
+    
+
+    .sessao2-servicos{
+        color: white;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        width: 30%;
+        margin-top: 20px;
+    }
+
+    .sessao2-servicos p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+
+/*FIM DA SESSAO 1 */
+
+@media screen and (max-width: 960px) {
+    .sessao1{
+        background-position: center;
+      }
+    
+}
+
+@media screen and (max-width: 758px) {
+
+
+    /*Menu responsivo*/
+
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+    
+}
+  /*Fim menu responsivo*/
+
+  .sessao1{
+    background-position: center;
+  }
+
+  .sessao2-container{
+   flex-wrap: wrap;
+   padding-bottom: 10px;
+}
+
+.sessao2-servicos{
+   width: 95%;
+   margin-bottom: 10px;
+}
+
+}
+  
