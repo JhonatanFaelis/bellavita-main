@@ -66,11 +66,17 @@ header{
         align-items: center;
         text-align: center;
         justify-content: center;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .sessao1 img{
+        animation: fromleft .6s backwards;
     }
 
     .sessao1 h1{
         margin-top: 40px;
         color: white;
+        animation: fromleft .8s backwards;
     }
 
     .sessao1 p{
@@ -78,23 +84,22 @@ header{
         margin-bottom: 20px;
         color: white;
         font-size: 20px;
+        animation: fromleft 1s backwards;
     }
 
     .sessao1 a{
         display: flex;
-        justify-content: center;
-        border: 1px solid #fff;
+        justify-content: center;    
         width: 50%;
         margin: auto;
-        background-color: #51B6B6;
+        background-image: linear-gradient(45deg, #51b6b6, #99d9d9);
         color: white;
         border-radius: 5px;
         text-decoration: none;
         padding: 10px 0;
         font-size: 20px;
-        
+        animation: fromleft 1.2s backwards;
     }
-
     /* FIM SESSAO 1*/
 
     /*INICIO SOBRE NOS */
@@ -111,16 +116,21 @@ header{
         margin-top: 30px;
         margin-bottom: 30px;
         font-weight: 600;
+        
     }
 
     .sobre-nos p{
         font-size: 20px;
         width: 70%;
         margin: auto;
-        color: #99D9D9;
+        color: #51B6B6;
         font-weight: 600;
         padding-bottom: 30px;
+        
     }
+
+
+    
 
     /*FIM SOBRE NOS */
 
@@ -128,11 +138,13 @@ header{
 
     .sessao2{
         display: flex;
-        background-image: url('./img/bg2alt.png');
+        background-image: url('./img/b2alt.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         flex-wrap: wrap;
+        border-radius: 10px;
+        padding-bottom: 25px;
     }
 
     .sessao2-texto{
@@ -173,6 +185,9 @@ header{
         border-radius: 5px;
         width: 30%;
         margin-top: 20px;
+        
+    
+        
     }
 
     .sessao2-servicos p{
@@ -188,8 +203,54 @@ header{
         font-size: 25px;
     }
 
+    .sessao2-servicos img{
+        margin-top: 10px;
+    }
 
+    .sessao2 a{
+        display: flex;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #51B6B6;
+        font-size: 15px;
+        font-weight: 600;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        padding: 15px 0;
+        animation-name: botao;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        box-shadow: #51B6B6 0px 0px 3px 1px inset, #51B6B6 0px 0px 12px 1px;
+    }
 
+    @keyframes botao{
+        0%{
+            transform: scale(1);
+        }
+
+        100%{
+            transform: scale(1.05);
+        }
+    }
+
+    @keyframes fromleft{
+        from {
+            opacity: 0;
+            transform: translatex(100px);
+        }
+    
+        to{
+            opacity: 1;
+            transform: translatex(0);
+        }
+    }
+
+    
 /*FIM DA SESSAO 1 */
 
 @media screen and (max-width: 960px) {
@@ -247,20 +308,27 @@ header{
 
   .sessao2-container{
    flex-wrap: wrap;
-   padding-bottom: 10px;
+   gap: 5px;
+   padding-bottom: 25px;
 }
 
 .sessao2-servicos{
    max-width: none;
    width: 95%;
-   margin-bottom: 10px;
+   margin-bottom: 5px;
+   gap: 5px;
 }
 
+.sessao2 a{
+    width: 95%;
+}
 
 .sobre-nos p{
     width: 85%;
     
 }
+
+
 
 }
   
