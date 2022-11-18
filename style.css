@@ -112,6 +112,7 @@ header{
         width: 100%;
         justify-content: space-around;
         padding-bottom: 50px;
+        text-align: center;
     }
 
     .sessao2-texto{
@@ -139,8 +140,16 @@ header{
     }
 
     .sessao2-servicos p{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .sessao2-servicos h4{
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        font-size: 25px;
     }
 
 
