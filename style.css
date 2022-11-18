@@ -83,7 +83,7 @@ header{
     .sessao1 a{
         display: flex;
         justify-content: center;
-        border: 1px solid #51B6B6;
+        border: 1px solid #fff;
         width: 50%;
         margin: auto;
         background-color: #51B6B6;
@@ -92,11 +92,43 @@ header{
         text-decoration: none;
         padding: 10px 0;
         font-size: 20px;
+        
     }
+
+    /* FIM SESSAO 1*/
+
+    /*INICIO SOBRE NOS */
+
+    .sobre-nos-container{
+        text-align: center;
+        background-color: #fff;
+        
+    }
+
+    .sobre-nos h1{
+        font-size: 25px;
+        color: #51B6B6;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    .sobre-nos p{
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+        color: #99D9D9;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+
+    /*FIM SOBRE NOS */
+
+    /*INICIO SESSAO2 - SERVIÇOS */
 
     .sessao2{
         display: flex;
-        background-image: url('./img/bg2.png');
+        background-image: url('./img/bg2alt.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -110,13 +142,15 @@ header{
     .sessao2-container{
         display: flex;
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 25px;
         padding-bottom: 50px;
         text-align: center;
     }
 
     .sessao2-texto{
         color: white;
+        text-align: center;
     }
 
     .sessao2-texto h2{
@@ -132,8 +166,10 @@ header{
     
 
     .sessao2-servicos{
-        color: white;
-        border: 1px solid #fff;
+        max-width: 350px;
+        color: #51B6B6;
+        background-color: #fff;
+        border: 1px solid #51B6B6;
         border-radius: 5px;
         width: 30%;
         margin-top: 20px;
@@ -200,6 +236,7 @@ header{
     background-color: transparent;
     border: none;
     margin-top: 20px;
+    cursor: pointer;
     
 }
   /*Fim menu responsivo*/
@@ -214,8 +251,15 @@ header{
 }
 
 .sessao2-servicos{
+   max-width: none;
    width: 95%;
    margin-bottom: 10px;
+}
+
+
+.sobre-nos p{
+    width: 85%;
+    
 }
 
 }
