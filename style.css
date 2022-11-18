@@ -108,6 +108,16 @@ header{
         text-align: center;
         background-color: #fff;
         
+        
+    }
+
+    .sobre-nos{
+        border: 1px solid #51B6B6;
+        border-radius: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .sobre-nos h1{
@@ -121,7 +131,7 @@ header{
 
     .sobre-nos p{
         font-size: 20px;
-        width: 70%;
+        width: 90%;
         margin: auto;
         color: #51B6B6;
         font-weight: 600;
@@ -324,10 +334,18 @@ header{
 }
 
 .sobre-nos p{
-    width: 85%;
+    width: 80%;
     
 }
 
+.sobre-nos{
+    border: 1px solid #51B6B6;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 }
